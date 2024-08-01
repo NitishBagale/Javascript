@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Methods</title>
+    
+</head>
+<body>
+    <script>
+        const date = new Date()
+
+        document.write(`${date} <br>`)
+        // .getFullYear()
+        document.write(`${date.getFullYear()}<br>`)
+        //.getMonths
+        document.write(`${date.getMonth()}<br>`)
+       //.getDay - 0-6
+        document.write(`${date.getDay()}<br>`)
+        //.gethours()-> 0-23
+        document.write(`${date.getHours()}<br>`)
+        //.getDay - 0-6
+        document.write(`${date.getDate()}<br>`)
+        
+        document.write(`${date.getSeconds()}<br>`)
+        
+        document.write(`${date.getMinutes()}<br>`)
+        
+        document.write(`${date.getMilliseconds()}<br>`)
+        document.write(`${date.toLocaleDateString()}<br>`)
+        
+        document.write(`${date.toLocaleTimeString()}<br>`)
+        const d = new Date()
+        d.setFullYear(2030)
+        document.write(`${d.getFullYear()}<br>`)
+        d.setMonth(1)
+        document.write(`${d.getMonth()}<br>`)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // array is used to store multiple data
+        student = ['Ram', 'Hari', 'Sita', 'Rita',, 10.5]
+        document.write(`${student}<br>`)
+        //indexing
+        document.write(`${student[0]}<br>`)
+        document.write(`${student[1][0]}<br>`)
+        //length
+        document.write(`${student.length}<br>`)
+        //.pop() used to remove data from end of array
+        student.pop()
+        document.write(`${student}<br>`)
+        
+        //.push(value) used to add data from end of array
+        student.push('Shyam')
+        document.write(`${student}<br>`)
+        //.shift() used to remove data from begining of array
+        student.shift()
+        document.write(`${student}<br>`)
+        //.unshift() used to add data from the begining of array
+        student.unshift('Birendra')
+        document.write(`${student}<br>`)
+        //splice
+        student.splice(2,0,'Ram','Aryan')
+        document.write(`${student}<br>`)
+        student.splice(3,2)
+        document.write(`${student}<br>`)
+        document.write(`${student.reverse()}<br>`)
+        //.sort() -> ascending order
+        const num = [1,6,3,2]
+        document.write(`${num}<br>`)
+num.sort()
+num.reverse()
+
+        //.reverse()
+        //break
+        //continue
+        //pattern 
+    </script>
+</body>
+</html>

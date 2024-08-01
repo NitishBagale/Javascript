@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <script>
+        const text = 'We are studing javascript programming language and JavaScript is used for interactive the web pages.'
+
+
+        document.write(`${text} <br>`)
+        document.write(`${text[2]} <br>`)
+        document.write(`${text.length} <br>`)
+        document.write(`${text.toUpperCase()} <br>`)
+        document.write(`${text.toLowerCase()} <br>`)
+        document.write(`${text.indexOf('javascript')} <br>`)
+        document.write(`${text.lastIndexOf('javascript')} <br>`)
+        document.write(`${text.search('javascript')} <br>`)
+        document.write(`${text.split('and')} <br>`)
+        document.write(`${text.slice(1,20)} <br>`)
+        document.write(`${text.substring(5,20)} <br>`)
+        document.write(`${text.substr(5,20)} <br>`)
+        document.write(`${text.replace('javascript', 'js' )} <br>`)
+        document.write(`${text.replaceAll('javascript', 'js' )} <br>`)
+        document.write(`${text.includes('javascript')} <br>`)
+        const test = '    Hello World   '
+        document.write(`${test.trim()}`)
+        
+    </script>
+</body>
+</html>

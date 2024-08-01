@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every</title>
+</head>
+<body>
+    <script>
+        //every return true if all the element in the array meets the condition
+        prices= [1000,2000,3000,4000,5000]
+        const check = prices.every((num)=>{
+            if (num<=4000){
+                return num 
+            }
+        })
+        document.write(`${check}<br>`)
+        //some() return true when only one element in the array meets the condition
+        prices= [1000,2000,3000,4000,5000]
+        const test = prices.some((num)=>{
+            if (num<=4000){
+                return num 
+            }
+        })
+        document.write(`${test}`)
+    </script>
+</body>
+</html>

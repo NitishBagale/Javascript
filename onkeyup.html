@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <input type="password" name="pwd" id="pwd">
+    <h2 id="result" class="demo"></h2>
+    <h3 class="demo"></h3>
+    <h4 class="demo"></h4>
+    <script>
+        const pwdInput = document.querySelector('#pwd')
+        // function demofunction(){
+        //     document.getElementById('result').innerHTML = pwdInput.value
+        // }
+        // document.addEventListener('keyup', demofunction)
+        // dom by class
+        document.addEventListener('keyup', ()=>{
+            document.getElementsByClassName('demo')[2].innerHTML = pwdInput.value
+            document.getElementsByClassName('demo')[2].style.backgroundColor = 'skyblue'
+            document.getElementsByClassName('demo')[2].style.textAlign = 'center'
+            document.getElementsByClassName('demo')[2].style.color= 'red'
+        } )
+    </script>
+</body>
+</html>

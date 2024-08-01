@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call back function</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        const students = [
+        {name:'Hari Paudel', age:40},
+        {name:'Ram Basnet', age:30},
+        {name:'Biren Shrestha', age:20},
+
+        ]
+        //define the function
+        const showStudent=()=>{
+            setTimeout(()=>{
+                let result = ""
+                students.forEach(info=>{
+                    result+=`<ul>
+                        <li> ${info.name} </li>
+                        </ul>`
+                })
+                document.querySelector('div').innerHTML = `${result}`
+            }, 5000)
+        }
+    
+        // call the function
+        // showStudent()
+
+        // const addStudent=newdata=>{
+            // setTimeout(()=>{
+            //     students.push(newdata)
+            // },6000)
+        // }
+
+        const addStudent=(newdata,callback)=>{
+            setTimeout(()=>{
+                students.push(newdata)
+                callback()
+            },6000) 
+
+        }
+
+        //call the function add
+        addStudent({name:'Bikesh Gurung', age:50},showStudent)
+
+    </script>
+</body>
+</html>

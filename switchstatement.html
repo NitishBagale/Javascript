@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-Statement</title>
+</head>
+<body>
+    <script>
+        const user1 = 'admin'
+        const user2 = 'user'
+        const pin = 1234
+        const userpin = parseInt(prompt("Enter the pin number"))
+        // switch(user=prompt('Enter a username')){
+        //     case user1:
+        //     document.write("Welcome to admin dashford")
+        //     break
+        //     default:
+        //         document.write('Invaild user')
+        // }
+        // switch(user=prompt('Enter a username')){
+        //     case user2:
+        //     document.write("Welcome to user dashford")
+        //     break
+        //     default:
+        //         document.write('Invaild user')
+        // }
+        switch(userpin){
+            case pin:
+                const value = parseInt(prompt("Welcome to Atm Service \n 1. Fast Cash \n 2. Withdraw \n 3. Bank Balance \n 4. Cancel"))
+                switch(value){
+                    case 1:
+                    const fastcash = parseInt(prompt("1. 1000 \n 2. 2000 \n 3. 5000 \n 4. 10000 \n 5. 50000 \n 6.   100000"))
+                    alert(" Thank you for using our ATM ")
+                    
+                }
+                break
+                default:
+                    alert("Invalid pin")
+            }
+            switch(userpin){
+            case pin:
+                const value = parseInt(prompt("Welcome to Atm Service \n 1. Fast Cash \n 2. Withdraw \n 3. Bank Balance \n 4. Cancel"))
+                switch(value){
+                    case 2:
+                    const Withdraw = parseInt(prompt("Enter the amount"))
+                    alert(" Thank you for using our ATM ")
+
+                }
+                break
+                default:
+                    alert("Invalid pin")
+            }
+            switch(userpin){
+            case pin:
+                const value = parseInt(prompt("Welcome to Atm Service \n 1. Fast Cash \n 2. Withdraw \n 3. Bank Balance \n 4. Cancel"))
+                switch(value){
+                    case 3:
+                    const BankBalance = parseInt((""))
+                    alert(" Your Bank Balance is Rs 500000")
+
+                }
+                break
+                default:
+                    alert("Invalid pin")
+            }           
+    </script>
+</body>
+</html>
